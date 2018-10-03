@@ -1,2 +1,6 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
+dev.R
+Dockerfile
+om.yml
+examples/
