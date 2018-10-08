@@ -2,7 +2,9 @@ pkgnm <- environmentName(env = environment())
 
 base_function <- function(cmd, ...) {
   args <- outsider::.args_parse(...)
-  files_to_send <- outsider::.which_args_are_filepaths(args)
+  possible_files <- c(args, paste0(args, '.nhr'), paste0(args, '.nin'),
+                      paste0(args, '.nsq'))
+  files_to_send <- outsider::.which_args_are_filepaths(possible_files)
   outsider::.run(pkgnm = pkgnm, files_to_send = files_to_send, cmd, args)
 }
 
