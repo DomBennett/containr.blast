@@ -1,5 +1,5 @@
 # Borrowed from https://github.com/blaxterlab/ncbi-blast-docker/blob/master/Dockerfile
-FROM ubuntu:18.04
+FROM ubuntu:latest
 
 RUN apt-get update && apt-get install -y \
     parallel \

@@ -1,13 +1,15 @@
-Package: om..blast..2.7.1..dombennett
+Package: om..blast..dombennett
 Type: Package
 Title: NCBI BLAST+ in R
 Version: 0.1.0
+Docker: dombennett
+GitHub: dombennett
 Author: Dom Bennett
 Maintainer: Dom Bennett <dominic.john.bennett@gmail.com>
 Description: Install and run NCBI BLAST+ tools from R.
 License: MIT + file LICENSE
 Encoding: UTF-8
-BugReports: https://github.com/dombennett/om..blast..2.7.1/issues
+BugReports: https://github.com/dombennett/om..blast/issues
 RoxygenNote: 6.1.0
 Depends:
     R (>= 3.3.0)
