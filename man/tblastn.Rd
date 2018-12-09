@@ -14,6 +14,6 @@ Run tblastn
 }
 \examples{
 library(outsider)
-tblastn <- module_import('tblastn', repo = 'dombennett/om..blast..2.7.1')
+tblastn <- module_import('tblastn', repo = 'dombennett/om..blast')
 tblastn('-help')
 }

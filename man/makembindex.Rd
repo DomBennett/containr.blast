@@ -15,6 +15,6 @@ Run makembindex
 \examples{
 library(outsider)
 makembindex <- module_import('makembindex',
-                             repo = 'dombennett/om..blast..2.7.1')
+                             repo = 'dombennett/om..blast')
 makembindex('-help')
 }

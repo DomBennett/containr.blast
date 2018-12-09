@@ -1,4 +1,4 @@
 library(outsider)
 windowmasker <- module_import('windowmasker',
-                              repo = 'dombennett/om..blast..2.7.1')
+                              repo = 'dombennett/om..blast')
 windowmasker('-help')

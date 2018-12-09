@@ -2,7 +2,7 @@ pkgnm <- environmentName(env = environment())
 
 base_function <- function(cmd, ...) {
   arglist <- outsider::.arglist_get(...)
-  possible_files <- c(args, paste0(arglist, '.nhr'), paste0(arglist, '.nin'),
+  possible_files <- c(arglist, paste0(arglist, '.nhr'), paste0(arglist, '.nin'),
                       paste0(arglist, '.nsq'))
   files_to_send <- outsider::.filestosend_get(arglist = possible_files)
   otsdr <- outsider::.outsider_init(repo = 'dombennett/om..blast',

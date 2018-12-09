@@ -1,3 +1,3 @@
 library(outsider)
-deltablast <- module_import('deltablast', repo = 'dombennett/om..blast..2.7.1')
+deltablast <- module_import('deltablast', repo = 'dombennett/om..blast')
 deltablast('-help')

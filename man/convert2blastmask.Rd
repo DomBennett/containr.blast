@@ -15,6 +15,6 @@ Run convert2blastmask
 \examples{
 library(outsider)
 convert2blastmask <- module_import('convert2blastmask',
-                                   repo = 'dombennett/om..blast..2.7.1')
+                                   repo = 'dombennett/om..blast')
 convert2blastmask('-help')
 }

@@ -15,6 +15,6 @@ Run blastdb_aliastool
 \examples{
 library(outsider)
 blastdb_aliastool <- module_import('blastdb_aliastool',
-                              repo = 'dombennett/om..blast..2.7.1')
+                              repo = 'dombennett/om..blast')
 blastdb_aliastool('-help')
 }
