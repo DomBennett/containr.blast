@@ -1,15 +1,13 @@
-pkgnm <- environmentName(env = environment())
 
 base_function <- function(cmd, ...) {
-  arglist <- outsider::.arglist_get(...)
+  arglist <- arglist_get(...)
   possible_files <- c(arglist, paste0(arglist, '.nhr'), paste0(arglist, '.nin'),
                       paste0(arglist, '.nsq'))
-  files_to_send <- outsider::.filestosend_get(arglist = possible_files)
-  otsdr <- outsider::.outsider_init(repo = 'dombennett/om..blast',
-                                    cmd = cmd, wd = getwd(),
-                                    files_to_send = files_to_send,
-                                    arglist = arglist)
-  outsider::.run(otsdr)
+  files_to_send <- filestosend_get(arglist = possible_files)
+  otsdr <- outsider_init(pkgnm = 'om..blast', cmd = cmd, wd = getwd(),
+                         files_to_send = files_to_send,
+                         arglist = arglist)
+  run(otsdr)
 }
 
 #' @name makeblastdb
