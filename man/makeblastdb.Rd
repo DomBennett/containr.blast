@@ -4,10 +4,10 @@
 \alias{makeblastdb}
 \title{makeblastdb}
 \usage{
-makeblastdb(...)
+makeblastdb(arglist = arglist_get(...))
 }
 \arguments{
-\item{...}{Arguments}
+\item{arglist}{Arguments}
 }
 \description{
 Run makeblastdb

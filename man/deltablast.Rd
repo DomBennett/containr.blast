@@ -4,10 +4,10 @@
 \alias{deltablast}
 \title{deltablast}
 \usage{
-deltablast(...)
+deltablast(arglist = arglist_get(...))
 }
 \arguments{
-\item{...}{Arguments}
+\item{arglist}{Arguments}
 }
 \description{
 Run deltablast

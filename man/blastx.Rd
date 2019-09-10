@@ -4,10 +4,10 @@
 \alias{blastx}
 \title{blastx}
 \usage{
-blastx(...)
+blastx(arglist = arglist_get(...))
 }
 \arguments{
-\item{...}{Arguments}
+\item{arglist}{Arguments}
 }
 \description{
 Run blastx

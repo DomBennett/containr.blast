@@ -4,10 +4,10 @@
 \alias{rpsblast}
 \title{rpsblast}
 \usage{
-rpsblast(...)
+rpsblast(arglist = arglist_get(...))
 }
 \arguments{
-\item{...}{Arguments}
+\item{arglist}{Arguments}
 }
 \description{
 Run rpsblast

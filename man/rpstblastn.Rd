@@ -4,10 +4,10 @@
 \alias{rpstblastn}
 \title{rpstblastn}
 \usage{
-rpstblastn(...)
+rpstblastn(arglist = arglist_get(...))
 }
 \arguments{
-\item{...}{Arguments}
+\item{arglist}{Arguments}
 }
 \description{
 Run rpstblastn

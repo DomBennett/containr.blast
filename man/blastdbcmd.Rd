@@ -4,10 +4,10 @@
 \alias{blastdbcmd}
 \title{blastdbcmd}
 \usage{
-blastdbcmd(...)
+blastdbcmd(arglist = arglist_get(...))
 }
 \arguments{
-\item{...}{Arguments}
+\item{arglist}{Arguments}
 }
 \description{
 Run blastdbcmd

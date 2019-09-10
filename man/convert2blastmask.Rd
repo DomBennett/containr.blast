@@ -4,10 +4,10 @@
 \alias{convert2blastmask}
 \title{convert2blastmask}
 \usage{
-convert2blastmask(...)
+convert2blastmask(arglist = arglist_get(...))
 }
 \arguments{
-\item{...}{Arguments}
+\item{arglist}{Arguments}
 }
 \description{
 Run convert2blastmask

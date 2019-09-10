@@ -4,10 +4,10 @@
 \alias{segmasker}
 \title{segmasker}
 \usage{
-segmasker(...)
+segmasker(arglist = arglist_get(...))
 }
 \arguments{
-\item{...}{Arguments}
+\item{arglist}{Arguments}
 }
 \description{
 Run segmasker

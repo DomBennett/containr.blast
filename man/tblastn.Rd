@@ -4,10 +4,10 @@
 \alias{tblastn}
 \title{tblastn}
 \usage{
-tblastn(...)
+tblastn(arglist = arglist_get(...))
 }
 \arguments{
-\item{...}{Arguments}
+\item{arglist}{Arguments}
 }
 \description{
 Run tblastn

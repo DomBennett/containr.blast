@@ -4,10 +4,10 @@
 \alias{makeprofiledb}
 \title{makeprofiledb}
 \usage{
-makeprofiledb(...)
+makeprofiledb(arglist = arglist_get(...))
 }
 \arguments{
-\item{...}{Arguments}
+\item{arglist}{Arguments}
 }
 \description{
 Run makeprofiledb

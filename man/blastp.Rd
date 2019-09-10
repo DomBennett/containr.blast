@@ -4,10 +4,10 @@
 \alias{blastp}
 \title{blastp}
 \usage{
-blastp(...)
+blastp(arglist = arglist_get(...))
 }
 \arguments{
-\item{...}{Arguments}
+\item{arglist}{Arguments}
 }
 \description{
 Run blastp

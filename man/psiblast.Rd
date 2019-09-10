@@ -4,10 +4,10 @@
 \alias{psiblast}
 \title{psiblast}
 \usage{
-psiblast(...)
+psiblast(arglist = arglist_get(...))
 }
 \arguments{
-\item{...}{Arguments}
+\item{arglist}{Arguments}
 }
 \description{
 Run psiblast

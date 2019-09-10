@@ -4,10 +4,10 @@
 \alias{blastdbcheck}
 \title{blastdbcheck}
 \usage{
-blastdbcheck(...)
+blastdbcheck(arglist = arglist_get(...))
 }
 \arguments{
-\item{...}{Arguments}
+\item{arglist}{Arguments}
 }
 \description{
 Run blastdbcheck

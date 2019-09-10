@@ -4,10 +4,10 @@
 \alias{dustmasker}
 \title{dustmasker}
 \usage{
-dustmasker(...)
+dustmasker(arglist = arglist_get(...))
 }
 \arguments{
-\item{...}{Arguments}
+\item{arglist}{Arguments}
 }
 \description{
 Run dustmasker
