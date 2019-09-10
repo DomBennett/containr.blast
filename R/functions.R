@@ -1,11 +1,32 @@
 
+arglist <- c('-query', '/Users/djb208/Coding/supersmartR-workshop/pipelines/3_supertree/1_phylotaR/blast/testdbfl',
+             '-db', '/Users/djb208/Coding/supersmartR-workshop/pipelines/3_supertree/1_phylotaR/blast/testdbfl',
+             '-outfmt', '6 qseqid sseqid pident length evalue qcovs qcovhsp',
+             '-dust', 'no', '-strand', 'plus', '-evalue', '1e-10', '-out',
+             'testoutfl')
+
 base_function <- function(cmd, arglist) {
   possible_files <- c(arglist, paste0(arglist, '.nhr'), paste0(arglist, '.nin'),
                       paste0(arglist, '.nsq'))
-  files_to_send <- filestosend_get(arglist = possible_files)
-  otsdr <- outsider_init(pkgnm = 'om..blast', cmd = cmd, wd = getwd(),
+  files_to_send <- unique(filestosend_get(arglist = possible_files))
+  parsed_arglist <- arglist
+  for (file_to_send in files_to_send) {
+    parsed_arglist[arglist == file_to_send] <- basename(file_to_send)
+  }
+  if ("-out" %in% arglist) {
+    out_index <- which(arglist == '-out')[1] + 1
+    output_file <- arglist[out_index]
+    wd <- dirpath_get(output_file)
+    parsed_arglist[out_index] <- basename(parsed_arglist[out_index])
+  } else if (length(files_to_send) > 0) {
+    # assume files_to_send are where output should be
+    wd <- dirpath_get(files_to_send[[1]])
+  } else {
+    wd <- getwd()
+  }
+  otsdr <- outsider_init(pkgnm = 'om..blast', cmd = cmd, wd = wd,
                          files_to_send = files_to_send,
-                         arglist = arglist)
+                         arglist = parsed_arglist)
   run(otsdr)
 }
 
