@@ -1,5 +1,5 @@
 program: blast
-details: Pre-compiled BLAST+, version 2.71.
+details: Basic Local Alignment Search Tool (Pre-compiled BLAST+, version 2.71.)
 docker: dombennett
 github: dombennett
 url: https://github.com/DomBennett/om..blast
